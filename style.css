@@ -87,7 +87,7 @@ img { max-width: 100%; display: block; }
 .btn-icon:hover { border-color: var(--color-primary); }
 
 /* HERO */
-.hero { max-width: 1200px; margin: 0 auto; padding: 32px 20px 10px; }
+.hero { max-width: 1200px; margin: 0 auto; padding: 32px 20px 8px; }
 .hero-grid { display: grid; grid-template-columns: 1.25fr 0.75fr; gap: 32px; align-items: center; }
 .eyebrow {
   display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap;
@@ -126,7 +126,7 @@ img { max-width: 100%; display: block; }
 .profile-stats span { font-size: 0.7rem; color: var(--text-subtle); font-family: 'JetBrains Mono', monospace; }
 
 /* Sections */
-.section { max-width: 1200px; margin: 0 auto; padding: 28px 20px 36px; }
+.section { max-width: 1200px; margin: 0 auto; padding: 8px 20px 36px; }
 .section.alt { background: var(--bg-surface); border-top: 1px solid var(--border-glass); border-bottom: 1px solid var(--border-glass); max-width: none; }
 .section.alt .section-head, .section.alt .skills-grid, .section.alt #projectsGrid, .section.alt .filters, .section.alt .toggle-wrap, .section.alt .edu-card { max-width: 1200px; margin-left: auto; margin-right: auto; padding-left: 0; padding-right: 0; }
 .section-head h2 { font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 1.9rem; letter-spacing: -0.02em; }
