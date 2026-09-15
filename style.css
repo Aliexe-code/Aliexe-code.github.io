@@ -103,8 +103,18 @@ img { max-width: 100%; display: block; }
 .hero-summary { color: var(--text-subtle); margin-top: 12px; font-size: 1.02rem; max-width: 62ch; }
 .hero-summary strong { color: var(--text-main); }
 .hero-ctas { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
-.hero-meta { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 14px; font-size: 0.88rem; color: var(--text-subtle); font-family: 'JetBrains Mono', monospace; }
-.hero-badges { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.hero-meta { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 18px; }
+.meta-item {
+  display: flex; align-items: center; gap: 10px; padding: 10px 12px;
+  background: var(--bg-card); border: 1px solid var(--border-glass); border-radius: 14px;
+  text-decoration: none; color: var(--text-main); transition: border-color 0.2s, transform 0.15s;
+  backdrop-filter: blur(8px);
+}
+.meta-item:hover { border-color: var(--border-active); transform: translateY(-1px); text-decoration: none; }
+.meta-icon { width: 36px; height: 36px; display: grid; place-items: center; border-radius: 10px; background: var(--bg-tag); border: 1px solid var(--border-glass); font-size: 0.95rem; flex-shrink: 0; }
+.meta-text { display: flex; flex-direction: column; line-height: 1.2; font-size: 0.82rem; min-width: 0; color: var(--text-main); font-family: 'JetBrains Mono', monospace; font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.meta-text strong { font-family: 'Inter', sans-serif; font-size: 0.68rem; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-subtle); font-weight: 700; margin-bottom: 1px; }
+.hero-badges { display: none; }
 .tag { font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-weight: 500; padding: 5px 10px; border-radius: 999px; background: var(--bg-tag); border: 1px solid var(--border-glass); color: var(--text-muted); }
 
 .hero-visual { display: flex; justify-content: center; }
@@ -213,6 +223,7 @@ img { max-width: 100%; display: block; }
   .hero-grid { grid-template-columns: 1fr; }
   .hero-visual { order: -1; }
   .nav-links { display: none; }
+  .hero-meta { grid-template-columns: 1fr; }
 }
 @media (max-width: 640px) {
   .skills-grid { grid-template-columns: 1fr; }
