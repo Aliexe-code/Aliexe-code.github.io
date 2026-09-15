@@ -87,7 +87,7 @@ img { max-width: 100%; display: block; }
 .btn-icon:hover { border-color: var(--color-primary); }
 
 /* HERO */
-.hero { max-width: 1200px; margin: 0 auto; padding: 32px 20px 18px; }
+.hero { max-width: 1200px; margin: 0 auto; padding: 32px 20px 10px; }
 .hero-grid { display: grid; grid-template-columns: 1.25fr 0.75fr; gap: 32px; align-items: center; }
 .eyebrow {
   display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap;
@@ -103,12 +103,12 @@ img { max-width: 100%; display: block; }
 .hero-summary { color: var(--text-subtle); margin-top: 12px; font-size: 1.02rem; max-width: 62ch; }
 .hero-summary strong { color: var(--text-main); }
 .hero-ctas { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
-.hero-meta { margin-top: 18px; }
+.hero-meta { margin-top: 16px; }
 .meta-box {
-  display: inline-flex; flex-direction: column; gap: 5px;
-  padding: 12px 16px; background: var(--bg-card); border: 1px solid var(--border-glass);
-  border-radius: 12px; font-family: 'JetBrains Mono', monospace; font-size: 0.82rem;
-  color: var(--text-main); backdrop-filter: blur(8px); line-height: 1.4; min-width: 240px;
+  display: inline-flex; flex-direction: column; gap: 6px;
+  padding: 14px 18px; background: var(--bg-card); border: 1px solid var(--border-glass);
+  border-radius: 12px; font-family: 'JetBrains Mono', monospace; font-size: 0.94rem;
+  color: var(--text-main); backdrop-filter: blur(8px); line-height: 1.45; min-width: 260px;
 }
 .meta-box a { color: var(--text-main); font-weight: 600; text-decoration: none; }
 .meta-box a:hover { color: var(--color-primary); text-decoration: underline; }
@@ -126,7 +126,7 @@ img { max-width: 100%; display: block; }
 .profile-stats span { font-size: 0.7rem; color: var(--text-subtle); font-family: 'JetBrains Mono', monospace; }
 
 /* Sections */
-.section { max-width: 1200px; margin: 0 auto; padding: 36px 20px; }
+.section { max-width: 1200px; margin: 0 auto; padding: 28px 20px 36px; }
 .section.alt { background: var(--bg-surface); border-top: 1px solid var(--border-glass); border-bottom: 1px solid var(--border-glass); max-width: none; }
 .section.alt .section-head, .section.alt .skills-grid, .section.alt #projectsGrid, .section.alt .filters, .section.alt .toggle-wrap, .section.alt .edu-card { max-width: 1200px; margin-left: auto; margin-right: auto; padding-left: 0; padding-right: 0; }
 .section-head h2 { font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 1.9rem; letter-spacing: -0.02em; }
