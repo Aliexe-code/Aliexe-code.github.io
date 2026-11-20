@@ -10,11 +10,11 @@ var OSS_DATA = [
     title: "Fix timer: prevent duplicate tickers on Start()",
     prUrl: "https://github.com/charmbracelet/bubbles/pull/922",
     issueUrl: "",
-    state: "open",
+    state: "merged",
     date: "Mar 2026",
     badges: ["Go", "TUI", "Bubble Tea"],
     summary: "Prevent Start() spawning multiple tickers causing accelerated countdown — data race fix.",
-    highlights: ["Open, under review; concurrency fix."]
+    highlights: ["Merged; concurrency fix."]
   },
   {
     id: "volcano-5050",
@@ -22,11 +22,11 @@ var OSS_DATA = [
     title: "Fix queue allocated metric for jobless queues",
     prUrl: "https://github.com/volcano-sh/volcano/pull/5050",
     issueUrl: "",
-    state: "open",
+    state: "merged",
     date: "Feb 2026",
     badges: ["Go", "CNCF", "Batch Scheduling"],
     summary: "Correct allocated metric consistency when queues have no jobs (capacity scheduling).",
-    highlights: ["Open; CNCF batch system."]
+    highlights: ["Merged; CNCF batch system."]
   }
 ];
 
