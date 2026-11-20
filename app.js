@@ -158,7 +158,7 @@ async function handleContactSubmit(event) {
   statusMsg.className = "form-status-msg";
   statusMsg.textContent = "";
   try {
-    var res = await fetch("https://formsubmit.co/ajax/terminalexe1@gmail.com", {
+    var res = await fetch("https://formsubmit.co/ajax/alimohammed.software@gmail.com", {
       method: "POST",
       headers: { "Content-Type": "application/json", "Accept": "application/json" },
       body: JSON.stringify({ name: name, email: email, message: message, _subject: "Portfolio inquiry from " + name, _captcha: "false" })
@@ -174,7 +174,7 @@ async function handleContactSubmit(event) {
     statusMsg.className = "form-status-msg error";
     statusMsg.textContent = "Couldn't send via form — opening your email client as fallback.";
     setTimeout(function(){
-      window.location.href = "mailto:terminalexe1@gmail.com?subject=" + encodeURIComponent("Portfolio inquiry from " + name) + "&body=" + encodeURIComponent("From: " + name + " <" + email + ">\n\n" + message);
+      window.location.href = "mailto:alimohammed.software@gmail.com?subject=" + encodeURIComponent("Portfolio inquiry from " + name) + "&body=" + encodeURIComponent("From: " + name + " <" + email + ">\n\n" + message);
     }, 600);
   } finally {
     if (btn) { btn.disabled = false; btn.textContent = "Send Message →"; }
